@@ -29,7 +29,7 @@ function initServer() {
         `,
             resolvers: {
                 Query: {
-                    sayHello: () => `Hello from Qraph Server.`
+                    sayHello: () => `Hello from QraphQL Server.`
                 },
             },
         });
