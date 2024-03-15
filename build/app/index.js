@@ -21,6 +21,8 @@ function initServer() {
     return __awaiter(this, void 0, void 0, function* () {
         const app = (0, express_1.default)();
         app.use(body_parser_1.default.json());
+        // prismaClient.user.create({
+        // })
         const graphqlServer = new server_1.ApolloServer({
             typeDefs: `
           type Query {
