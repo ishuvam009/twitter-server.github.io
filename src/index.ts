@@ -1,0 +1,1 @@
+import { initServer } from "./app/indexa";
