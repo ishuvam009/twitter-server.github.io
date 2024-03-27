@@ -13,14 +13,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 model User {
-  id String @id @default(cuid())
-  firstName String
-  lastName String?
-  email String @unique
-  profileImageURL String?
+id String @id @default(cuid())
+firstName String
+lastName String?
+email String @unique
+profileImageURL String?
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+createdAt DateTime @default(now())
+updatedAt DateTime @updatedAt
 }
